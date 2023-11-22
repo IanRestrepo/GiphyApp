@@ -21,7 +21,7 @@ document.querySelector(".searchBtn").addEventListener("change", function (e) {
     var userInput = getUserInput();
     searchGiphy(userInput);
 
-    e.preventDefault()   
+   
 });
 
 document.querySelector(".searchBtn").addEventListener("click", function () {
@@ -29,7 +29,7 @@ document.querySelector(".searchBtn").addEventListener("click", function () {
     var inputValue = document.querySelector(".input").value;
     var userInput = getUserInput();
     searchGiphy(userInput);
-    e.preventDefault()
+    
 });
 
 
