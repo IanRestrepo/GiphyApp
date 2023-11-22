@@ -1,6 +1,5 @@
 function getUserInput() {
-    var inputValue = document
-        .querySelector(".input").value;
+    var inputValue = document.querySelector(".input").value;
     return inputValue;
 }
 
@@ -17,15 +16,13 @@ document.querySelector(".Switch-Theme").addEventListener('click', ()=> {
 })
 
 document.querySelector(".searchBtn").addEventListener("change", function () {
-    var inputValue = document
-        .querySelector(".input").value;
+    var inputValue = document.querySelector(".input").value;
     var userInput = getUserInput();
     searchGiphy(userInput);
 });
 
 document.querySelector(".searchBtn").addEventListener("click", function () {
-    var inputValue = document
-        .querySelector(".input").value;
+    var inputValue = document.querySelector(".input").value;
     var userInput = getUserInput();
     searchGiphy(userInput);
 });
@@ -40,8 +37,7 @@ document.querySelector(".input").addEventListener("keyup", function (e) {
     });
 
 function searchGiphy(searchQuery) {
-    var url =
-        "https://api.giphy.com/v1/gifs/search?api_key=x5KKTi2QtklbXfP2KvhDY38g7CqtaX5A&q=" + searchQuery;
+    var url = "https://api.giphy.com/v1/gifs/search?api_key=x5KKTi2QtklbXfP2KvhDY38g7CqtaX5A&q=" + searchQuery;
 
     var GiphyAJAXCall = new XMLHttpRequest();
     GiphyAJAXCall.open("GET", url);
