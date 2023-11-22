@@ -16,10 +16,12 @@ document.querySelector(".Switch-Theme").addEventListener('click', ()=> {
 })
 
 document.querySelector(".searchBtn").addEventListener("change", function (e) {
-    e.preventDefault()
+ 
     var inputValue = document.querySelector(".input").value;
     var userInput = getUserInput();
     searchGiphy(userInput);
+
+       e.preventDefault()
 });
 
 document.querySelector(".searchBtn").addEventListener("click", function () {
