@@ -31,8 +31,7 @@ document.querySelector(".searchBtn").addEventListener("click", function () {
 });
 
 
-document.querySelector(".input")
-    .addEventListener("keyup", function (e) {
+document.querySelector(".input").addEventListener("keyup", function (e) {
 
         if (e.which === 13) {
             var userInput = getUserInput();
